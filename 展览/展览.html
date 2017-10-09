@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>展览 - 故宫博物院</title>
+    <link rel="stylesheet" href="css/lh.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/demo.css"/>
+    <script src="js/jquery-1.12.2.js"></script>
+    <script src="js/demo.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+</head>
+<body>
+<!--导航栏--B-->
+<div class="header">
+    <div class="wrap w">
+        <div class="logo">
+            <a href="#">
+                <img src="images/5.png" alt="故宫博物馆" title="故宫博物馆"/>
+            </a>
+        </div>
+        <div class="nav_main">
+            <ul>
+                <li>
+                    <a href="#">首页</a>
+                    <b></b>
+                </li>
+                <li>
+                    <a href="#">导览</a>
+                    <b><img src="images/arrow1.png" width="18"/></b>
+                </li>
+                <li id="show">
+                    <a href="#">展览</a>
+                    <b><img src="images/arrow1.png" width="18"/></b>
+                </li>
+                <li>
+                    <a href="#">教育</a>
+                    <b><img src="images/arrow1.png" width="18"/></b>
+                </li>
+                <li>
+                    <a href="#">探索</a>
+                    <b><img src="images/arrow1.png" width="18"/></b>
+                </li>
+                <li>
+                    <a href="#">学术</a>
+                    <b><img src="images/arrow1.png" width="18"/></b>
+                </li>
+                <li>
+                    <a href="#">文创</a>
+                    <b><img src="images/arrow1.png" width="18"/></b>
+                </li>
+                <li>
+                    <a href="#">关于</a>
+                    <b><img src="images/arrow1.png" width="18"/></b>
+                </li>
+            </ul>
+        </div>
+        <div class="tools">
+            <div class="d us login">
+                <span id="person"><img src="images/ico_tools_search.png"></span>
+
+                <div class="loginbox">
+                    <a class="a" href="#">登录</a>
+                    <a class="a" href="#">注册</a>
+                </div>
+            </div>
+            <div class="d la lang">
+                <span id="lang"><img src="images/zhong1.png"></span>
+
+                <div class="language">
+                    <a class="a" href="#">English</a>
+                    <a class="a" href="#">青少版</a>
+                </div>
+            </div>
+            <div class="d sc scbtn">
+                <span id="lookFor"><img width="17" src="images/ico_tools_user.png"></span>
+
+                <div class="search">
+                    <input type="text" class="kw" value="搜索关键词...">
+                    <input type="button" class="ok">
+                </div>
+            </div>
+            <div class="d me" id="menutool">
+                <a href="javascript:;"><img src="images/menu2-1.png"></a>
+            </div>
+            <div id="popWindow" class="popWindow navbar ">
+                <div class="layer">
+                    <a href="javascript:;" class="close" id="close"></a>
+                    <div class="list" id="list">
+                        <div class="">
+                            <div class="item">
+                                <a href="javascript:void(0);" style="color:#fff;"><h1>导览</h1></a>
+                                <dl>
+                                    <dd><a class="itemA" href="javascript:void(0);">开放时间</a></dd>
+                                    <dd><a class="itemA" href="javascript:void(0);">票务服务</a></dd>
+                                    <dd><a class="itemA" href="javascript:void(0);">交通路线</a></dd>
+                                    <dd><a class="itemA" href="javascript:void(0);">游览须知</a></dd>
+                                    <dd><a class="itemA" href="javascript:void(0);" target="_blank">全景故宫</a></dd>
+                                </dl>
+                            </div>
+                            <div class="item">
+                                <a href="javascript:void(0);" style="color:#fff;"><h1>展览</h1></a>
+                                <dl>
+                                    <dd><a class="itemA" href="javascript:void(0);">近期展览</a></dd>
+                                    <dd><a class="itemA" href="javascript:void(0);">常设专馆</a></dd>
+                                    <dd><a class="itemA" href="javascript:void(0);">原状陈列</a></dd>
+                                    <dd><a class="itemA" href="javascript:void(0);">赴外展览</a></dd>
+                                </dl>
+                            </div>
+                            <div class="item">
+                                <a href="javascript:void(0);" style="color:#fff;"><h1>教育</h1></a>
+                                <dl>
+                                    <dd><a class="itemA" href="javascript:void(0);">教育新闻</a></dd>
+                                    <dd><a class="itemA" href="javascript:void(0);">故宫博物院教育中心</a></dd>
+                                    <dd><a class="itemA" href="javascript:void(0);">国际博协培训中心</a></dd>
+                                    <dd><a class="itemA" href="javascript:void(0);">故宫志愿者</a></dd>
+                                </dl>
+                            </div>
+                            <div class="item">
+                                <a href="javascript:void(0);" style="color:#fff;"><h1>探索</h1></a>
+                                <dl>
+                                    <dd><a class="itemA" href="javascript:void(0);">建筑</a></dd>
+                                    <dd><a class="itemA" href="javascript:void(0);">藏品</a></dd>
+                                    <dd><a class="itemA" href="javascript:void(0);">古籍</a></dd>
+                                    <dd><a class="itemA" href="javascript:void(0);">宫廷历史</a></dd>
+                                    <dd><a class="itemA" href="javascript:void(0);">文物医院</a></dd>
+                                    <dd><a class="itemA" href="javascript:void(0);">文化专题</a></dd>
+                                    <dd><a class="itemA" href="javascript:void(0);">名画记</a></dd>
+                                    <dd><a class="itemA" href="javascript:void(0);" target="_blank">藏品总目</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="item">
+                                <a href="javascript:void(0);" style="color:#fff;"><h1>学术</h1></a>
+                                <dl>
+                                    <dd><a class="itemA" href="javascript:void(0);">学术活动</a></dd>
+                                    <dd><a class="itemA" href="javascript:void(0);">专家名录</a></dd>
+                                    <dd><a class="itemA" href="javascript:void(0);">故宫研究院</a></dd>
+                                    <dd><a class="itemA" href="javascript:void(0);">故宫学院</a></dd>
+                                    <dd><a class="itemA" href="javascript:void(0);">其他学术机构</a></dd>
+                                </dl>
+                            </div>
+                            <div class="item">
+                                <a href="" style="color:#fff;"><h1>文创</h1></a>
+                                <dl>
+                                    <dd><a class="itemA" href="javascript:void(0);">故宫出版</a></dd>
+                                    <dd><a class="itemA" href="javascript:void(0);">文创产品</a></dd>
+                                    <dd><a class="itemA" href="javascript:void(0);">故宫壁纸</a></dd>
+                                    <dd><a class="itemA" href="javascript:void(0);">故宫APP</a></dd>
+                                    <dd><a class="itemA" href="javascript:void(0);" target="_blank">故宫游戏</a></dd>
+                                </dl>
+                            </div>
+                            <div class="item">
+                                <a href="javascript:void(0);" style="color:#fff;"><h1>关于</h1></a>
+                                <dl>
+                                    <dd><a class="itemA" href="javascript:void(0);">总说</a></dd>
+                                    <dd><a class="itemA" href="javascript:void(0);">资讯</a></dd>
+                                    <dd><a class="itemA" href="javascript:void(0);">院史编年</a></dd>
+                                    <dd><a class="itemA" href="javascript:void(0);">景仁榜</a></dd>
+                                    <dd><a class="itemA" href="javascript:void(0);">机构设置</a></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="s_box">
+    <s></s>
+    <ul>
+        <li><a href="#">建筑</a></li>
+        <b></b>
+        <li><a href="#">藏品</a></li>
+        <b></b>
+        <li><a href="#">古籍</a></li>
+        <b></b>
+        <li><a href="#">宫廷历史</a></li>
+        <b></b>
+        <li><a href="#">文物医院</a></li>
+        <b></b>
+        <li><a href="#">文化主题</a></li>
+        <b></b>
+        <li><a href="#">名画记</a></li>
+        <b></b>
+        <li><a href="#">藏品总目</a></li>
+    </ul>
+</div>
+<div class="body">
+    <div class="position">
+        <div class="wrap">
+            <a href="/"> 首页 </a>
+            » <a href="/#" id="bread-show">展览</a>
+        </div>
+    </div>
+</div>
+<div id="box" class="w">
+    <div id="screen">
+        <ul>
+            <li><img src="images/1.jpg" alt=""/></li>
+            <li><img src="images/2.jpg" alt=""/></li>
+            <li><img src="images/26.jpg" alt=""/></li>
+        </ul>
+    </div>
+</div>
+<!--导航栏--E-->
+
+<!--轮播图1--B-->
+<div class="box_b w">
+    <div id="anniu">
+        <ul id="anniuS">
+            <li id="a_left"><b></b></li>
+            <li id="a_middle"><span></span></li>
+            <li id="a_right"><s></s></li>
+        </ul>
+    </div>
+</div>
+<!--轮播图1--E-->
+
+<!--title1--B-->
+<div class ="title1 w">
+    <i class="s1"></i>
+    <i class="s3"><img src="images/2.png" alt=""/></i>
+    <i class="s2"></i>
+</div>
+<!--title1--E-->
+
+<!--list--B-->
+<div class="list w">
+    <div class="T-box">
+        <div class="table one">
+            <table>
+                <tbody>
+                <tr>
+                    <th width="960">展览名称</th>
+                    <th width="322">展览地点</th>
+                    <th width="176">展览时间</th>
+                </tr>
+                <tr>
+                    <td width="960">
+                        <a>秘色重光——秘色瓷的考古大发现与再进宫</a>
+                        <span class="zc">展出</span>
+                    </td>
+                    <td width="322">斋宫、诚肃宫</td>
+                    <td width="176">
+                        <span class="data">2017/05/23 - 2017/07/02</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="960">
+                        <a>紫禁城与"海上丝绸之路"展</a>
+                        <span class="zc">展出</span>
+                    </td>
+                    <td width="322">午门西雁翅楼展厅</td>
+                    <td width="176">
+                        <span class="data">2017/05/09 - 2017/07/08</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="960">
+                        <a>故宫博物院藏四僧书画展</a>
+                        <span class="zc">展出</span>
+                    </td>
+                    <td width="322">	武英殿</td>
+                    <td width="176">
+                        <span class="data">	2017/05/06 - 2017/06/28</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="960">
+                        <a>徽匠神韵——安徽徽州传统工艺故宫特展</a>
+                        <span class="zc">展出</span>
+                    </td>
+                    <td width="322">	永寿宫</td>
+                    <td width="176">
+                        <span class="data">2017/04/11 - 2017/05/31</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="960">
+                        <a>尚之以琼华——始于十八世纪的珍宝艺术展 </a>
+                        <span class="zc">展出</span>
+                    </td>
+                    <td width="322">	午门展厅</td>
+                    <td width="176">
+                        <span class="data">2017/04/11 - 2017/07/02</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="960">
+                        <a>浴火重光——来自阿富汗国家博物馆的宝藏</a>
+                        <span class="zc">展出</span>
+                    </td>
+                    <td width="322">午门东雁翅楼展厅</td>
+                    <td width="176">
+                        <span class="data">2017/03/17 - 2017/06/17</span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table two">
+            <table>
+                <tbody>
+                <tr>
+                    <th width="960">展览名称</th>
+                    <th width="322">展览地点</th>
+                    <th width="176">展览时间</th>
+                </tr>
+                <tr>
+                    <td width="960">
+                        <a>清代军机处史料展</a>
+                    </td>
+                    <td width="322">乾清门广场西北隅值房</td>
+                    <td width="176">
+                        <span class="data">	常设</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="960">
+                        <a>皇家电话局展</a>
+                    </td>
+                    <td width="322">储秀宫西配殿</td>
+                    <td width="176">
+                        <span class="data">常设</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="960">
+                        <a>营造之道——紫禁城建筑艺术展</a>
+                        <!--<span class="zc"></span>-->
+                    </td>
+                    <td width="322">东南角楼、銮仪卫、东华门</td>
+                    <td width="176">
+                        <span class="data">常设</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="960">
+                        <a>庆隆尊养——崇庆皇太后专题展</a>
+                        <!--<span class="zc"></span>-->
+                    </td>
+                    <td width="322">寿康宫展厅</td>
+                    <td width="176">
+                        <span class="data">常设</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="960">
+                        <a>天子万年——清代万寿庆典展</a>
+                        <!--<span class="zc">展出</span>-->
+                    </td>
+                    <td width="322">乾清宫西庑</td>
+                    <td width="176">
+                        <span class="data">常设</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="960">
+                        <a>捐献文物精品展</a>
+                        <span class="zb">暂闭</span>
+                    </td>
+                    <td width="322">景仁宫捐献馆</td>
+                    <td width="176">
+                        <span class="data"></span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table three">
+            <table>
+                <tbody>
+                <tr>
+                    <th width="960">展览名称</th>
+                    <th width="322">展览地点</th>
+                    <th width="176">展览时间</th>
+                </tr>
+                <tr>
+                    <td width="960">
+                        <a>清宫武备兵器展</a>
+                        <span class="zb">暂闭</span>
+                    </td>
+                    <td width="322">弘义阁迤南西庑</td>
+                    <td width="176">
+                        <span class="data"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="960">
+                        <a>皇朝礼乐展</a>
+                        <span class="zb">暂闭</span>
+                    </td>
+                    <td width="322">弘义阁</td>
+                    <td width="176">
+                        <span class="data"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="960">
+                        <a>清宫卤簿仪仗展</a>
+                        <span class="zb">暂闭</span>
+                    </td>
+                    <td width="322">太和门西庑</td>
+                    <td width="176">
+                        <span class="data"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="960">
+                        <a>溥仪生活展 </a>
+                        <span class="zb">暂闭</span>
+                    </td>
+                    <td width="322">储秀宫丽景轩</td>
+                    <td width="176">
+                        <span class="data"></span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="pages w">
+            <span class="leftSword"><img src="images/yuanhongL.jpg" alt=""/></span>
+            <a class="leftArrow" href="javascript:;"><img src="images/public-icon3.png" alt=""/></a>
+            <a class="num1 circle" href="javascript:;">1</a>
+            <a class="num2" href="javascript:;">2</a>
+            <a class="num3" href="javascript:;">3</a>
+            <a class="rightArrow" href="javascript:;"><img src="images/public-icon4.png" alt=""/></a>
+            <span class="rightSword"><img src="images/yuanhongR.jpg" alt=""/></span>
+        </div>
+    </div>
+</div>
+<!--list--E-->
+
+<!--title2--B-->
+<div class ="title2 w">
+    <i class="s1"></i>
+    <i class="s3"><img src="images/1.png" alt=""/></i>
+    <i class="s2"></i>
+</div>
+<!--title2--E-->
+
+<!--专馆----B-->
+<div class="list1 w">
+    <a href="javascript:;"><img src="images/15.jpg" alt=""/></a>
+    <a href="javascript:;"><img src="images/16.jpg" alt=""/></a>
+    <a href="javascript:;"><img src="images/17.jpg" alt=""/></a>
+    <a href="javascript:;"><img src="images/18.jpg" alt=""/></a>
+    <a class="F" href="javascript:;"><img src="images/19.jpg" alt=""/></a>
+    <a href="javascript:;"><img src="images/20.jpg" alt=""/></a>
+    <a href="javascript:;"><img src="images/21.jpg" alt=""/></a>
+    <a href="javascript:;"><img src="images/22.jpg" alt=""/></a>
+    <a href="javascript:;"><img src="images/23.jpg" alt=""/></a>
+    <a class="F" href="javascript:;"><img src="images/24.jpg" alt=""/></a>
+    <div class="map">
+        <a href="javascript:;">导览地图</a>
+    </div>
+</div>
+<!--专馆----E-->
+<!--原状---B-->
+<div class="content3 w">
+    <div class="content3-t">
+        <b class="b1"><img src="images/temporary-title.png" alt=""/></b>
+        <span><img src="images/3.png" alt=""/></span>
+        <b class="b2"><img src="images/temporary-title1.png" alt=""/></b>
+    </div>
+    <div class="content3-b">
+        <div class="item i1 first">
+            <img src="images/8.jpg" alt=""/>
+            <h2>太和殿</h2>
+        </div>
+        <div class="item i2">
+            <div class="text">
+                <p>原状陈列是故宫博物院历史悠久、极具特色，且深受广大观众喜爱的展览类型。
+                    原状宫殿中的陈设都是严格遵循历史档案记载去选择与布置，力求恢复历史原貌，
+                    让观众能够真切地感受到厚重的历史文化氛围。这些精美的文物藏品与历尽
+                    沧桑的古代建筑一起构成和谐统一的整体，蕴含着丰富的历史信息和文化内涵
+                    ，向世人形象地展示宫廷文化。</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/7.jpg" alt=""/>
+            <h2>中和殿</h2>
+        </div>
+        <div class="item">
+            <img src="images/12.jpg" alt=""/>
+            <h2>宝和殿</h2>
+        </div>
+        <div class="item first">
+            <img src="images/14.jpg" alt=""/>
+            <h2>乾清宫</h2>
+        </div>
+        <div class="item">
+            <img src="images/11.jpg" alt=""/>
+            <h2>交泰殿</h2>
+        </div>
+        <div class="item">
+            <img src="images/6.jpg" alt=""/>
+            <h2>坤宁宫</h2>
+        </div>
+        <div class="item">
+            <img src="images/5.jpg" alt=""/>
+            <h2>咸若馆</h2>
+        </div>
+        <div class="item first">
+            <img src="images/10.jpg" alt=""/>
+            <h2>寿康宫</h2>
+        </div>
+        <div class="item">
+            <img src="images/9.jpg" alt=""/>
+            <h2>养心殿</h2>
+        </div>
+        <div class="item">
+            <img src="images/4.jpg" alt=""/>
+            <h2>储秀宫</h2>
+        </div>
+        <div class="item">
+            <img src="images/13.jpg" alt=""/>
+            <h2>皇极殿</h2>
+        </div>
+    </div>
+</div>
+<!--原状---E-->
+<!--展览---B-->
+<div class="content4 w clearfix">
+    <div class="content4-t">
+        <b class="b1"><img src="images/temporary-title.png" alt=""/></b>
+        <span><img src="images/4.png" alt=""/></span>
+        <b class="b2"><img src="images/temporary-title1.png" alt=""/></b>
+    </div>
+    <div class="content4-b">
+        <div class="content4-b-l fl"><img src="images/25.jpg" alt=""/></div>
+        <div class="content4-b-r fr">
+            <div class="text">
+                <div class="text-t">
+                    <div class="blank"></div>
+                    <div class="item1 clearfix">
+                        <h2>
+                            <span class="fl">大阅风仪——故宫珍藏清代武备精品展（暂定名）</span>
+                            <span class="waitShow fl">待展</span>
+                        </h2>
+
+                        <p>
+                            <span class="fl">澳门艺术博物馆</span>
+                            <span class="fr">2017/12/01 - 2018/03/01</span>
+                        </p>
+                    </div>
+                    <div class="item1 clearfix">
+                        <h2>
+                            <span class="fl">传神雅聚——中国明清肖像画展（暂定名）</span>
+                            <span class="waitShow fl">待展</span>
+                        </h2>
+
+                        <p>
+                            <span class="fl">德国柏林国家博物馆绘画馆</span>
+                            <span class="fr">2017/10/12 - 2018/01/07</span>
+                        </p>
+                    </div>
+                    <div class="item1 clearfix">
+                        <h2>
+                            <span class="fl">继文绳武——清代帝王的家国天下</span>
+                            <span class="waitShow fl">待展</span>
+                        </h2>
+
+                        <p>
+                            <span class="fl">摩纳哥格里马尔蒂宫</span>
+                            <span class="fr">2017/07/14 - 2017/09/10</span>
+                        </p>
+                    </div>
+                    <div class="item1 clearfix">
+                        <h2>
+                            <span class="fl">清代万寿盛典展</span>
+                            <span class="waitShow fl">待展</span>
+                        </h2>
+
+                        <p>
+                            <span class="fl">香港历史博物馆</span>
+                            <span class="fr">2017/12/01 - 2018/03/01</span>
+                        </p>
+                    </div>
+                    <div class="item2 clearfix">
+                        <h2>
+                            <span class="fl">八代帝居——故宫养心殿文物展</span>
+                            <span class="waitShow fl">待展</span>
+                        </h2>
+
+                        <p>
+                            <span class="fl">香港文化博物馆</span>
+                            <span class="fr">2017/06/30 - 2017/10/15</span>
+                        </p>
+                    </div>
+                    <div class="item2 clearfix">
+                        <h2>
+                            <span class="fl">永膺福庆——清代宫廷的辉煌</span>
+                            <span class="waitShow fl">展出</span>
+                        </h2>
+
+                        <p>
+                            <span class="fl">芬兰瓦普里克博物馆中心</span>
+                            <span class="fr">2017/04/21 - 2017/10/01</span>
+                        </p>
+                    </div>
+                    <div class="item2 clearfix">
+                        <h2>
+                            <span class="fl">紫禁城与海上丝绸之路</span>
+                            <span class="waitShow fl">结束</span>
+                        </h2>
+
+                        <p>
+                            <span class="fl">海南省琼海市南海博物馆</span>
+                            <span class="fr">2017/03/20 - 2017/04/20</span>
+                        </p>
+                    </div>
+                    <div class="item2 clearfix">
+                        <h2>
+                            <span class="fl">紫泥清韵 皇家品味——故宫博物院珍藏宜兴紫砂回乡展</span>
+                            <span class="waitShow fl">结束</span>
+                        </h2>
+
+                        <p>
+                            <span class="fl">宜兴市博物馆</span>
+                            <span class="fr">2017/01/12 - 2017/04/12</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="text-b" id="btn">
+                    <a href="javascript:;" class="new a1">1</a>
+                    <a href="javascript:;" class="a2" id="a2">2</a>
+                    <a href="javascript:;" class="next a3"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--展览---E-->
+<!--阿富汗---B-->
+<div class="content5 w">
+    <div class="content5-t">
+        <b>
+            <img src="images/public-icon3.png" alt=""/>
+        </b>
+        <span>足不出户，体验故宫展览的魅力</span>
+        <b>
+            <img src="images/public-icon4.png" alt=""/>
+        </b>
+    </div>
+    <div class="content5-c">浴火重光——来自阿富汗国家博物馆的宝藏展</div>
+    <div class="content5-b" id="content5-b">
+        <img src="images/3.jpg" alt="" id="img"/>
+    </div>
+</div>
+<!--阿富汗---E-->
+<!--footer---B-->
+<div class="footer">
+    <div class="w">
+        <div class="footer-t">
+            <a href="#"><img src="images/footer_sinawb.png" alt=""/></a>
+            <a href="#"><img src="images/footer_wx.png" alt=""/></a>
+        </div>
+        <div class="footer-c">
+            <a href="#">网站地图</a>&nbsp;&nbsp;&nbsp;
+            <a href="#">相关链接</a>&nbsp;&nbsp;&nbsp;
+            <a href="#">影像授权</a>&nbsp;&nbsp;&nbsp;
+            <a href="#">隐私政策</a>&nbsp;&nbsp;&nbsp;
+            <a href="#">版权声明</a>&nbsp;&nbsp;&nbsp;
+            <a href="#">常见问题</a>&nbsp;&nbsp;&nbsp;
+            <a href="#">联系我们</a>
+        </div>
+        <div class="footer-b">
+            <div class="footer-b-t">
+                COPYRIGHT&nbsp;©&nbsp;2015&nbsp;故宫博物院.&nbsp;ALL RIGHTS RESERVED&nbsp;&nbsp;
+                京ICP备05003873号 &nbsp;&nbsp;&nbsp;&nbsp;<a href="#">网站建设： 北京分形科技</a>
+            </div>
+            <div class="footer-b-b">
+                <a href="#">浏览建议</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer---E-->
+<script>
+    $(function(){
+        $(".a2,.a3").click(function(){
+            $(".a1").text("").css("background","url(images/page_prev1.png) no-repeat center center");
+            $(".a2").text("1");
+            $(".a3").text("2").css("background","url(images/page_a1.png) no-repeat center center");
+            $(".item1").css("display","none");
+            $(".item2").css("display","block");
+        });
+        $(".a1,.a2").click(function(){
+            $(".a1").text("1").css("background","url(images/page_a1.png) no-repeat center center");
+            $(".a2").text("2");
+            $(".a3").text("").css("background","url(images/page_next1.png) no-repeat center center");
+            $(".item1").css("display","block");
+            $(".item2").css("display","none");
+        });
+    });
+</script>
+</body>
+</html>

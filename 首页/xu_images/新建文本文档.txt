@@ -1,0 +1,66 @@
+html ,body{
+height:100%;
+}
+text-overflow: ellipsis; 文本多的隐藏把
+white-space: nowrap; 不换行
+
+故宫资讯
+
+05 / 19
+
+当故宫成为一种生活方式——故宫博物院新版官方中文网站暨《故宫社区》App正式发布
+05 / 18
+
+故宫博物院举办丰富活动庆祝第四十一个5.18国际博物馆日
+05 / 13
+
+故宫鼓浪屿外国文物馆将于厦门开馆
+05 / 12
+
+关于部分区域原状陈列照明维修的公告
+05 / 11
+
+“记忆与当代”——第57届威尼斯艺术双年展平行展开幕
+05 / 10
+
+“故宫讲坛”第一百零六讲讲座信息
+
+::before 
+content: '';
+    position: absolute;
+    left: 0;
+    top: 13px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #fff;
+
+
+<div class="">
+    <a href="javascript:;" class="gotop"></a>
+    <ul>
+        <li class="season">
+            <a href="javascript:;">
+                <span>肤</span>
+                <span id="season"><i>春</i> · <i>夏</i> · <i>秋</i> · <i>冬</i> · <i>常</i></span>
+            </a>
+        </li>
+        <li class="share">
+            <a href="javascript:;">
+                <span>享</span>
+                <span>
+                    <i class="i1" onclick="jiathis_sendto('tsina');return false;">
+                        <img src="/Public/static/themes/image/lyc/share-icon1.png">
+                    </i>
+                    <i class="i2" onclick="jiathis_sendto('weixin');return false;">
+                        <img src="/Public/static/themes/image/lyc/share-icon2.png">
+                    </i>
+                    <!--i class="i3" onClick="jiathis_sendto('qzone');return false;">
+                        <img src="/Public/static/themes/image/lyc/share-icon3.png">
+                    </i-->
+                </span>
+            </a>
+        </li>
+        <li><a href="librarys.html"><span>书</span><span>图书馆</span></a></li><li><a href="auditions.html"><span>听</span><span>视听馆</span></a></li><li><a href="https://palacemuseum.tmall.com/shop/view_shop.htm?spm=a220m.1000862.1000730.2.IS2lQC&amp;user_number_id=2893966855&amp;rn=68d7e1a1bf5ba21acef0322cb010ecf7"><span>创</span><span>文创馆</span></a></li><li><a href="http://mob.visualbusiness.cn/gugong-pc/v1.0.52/index.html"><span>景</span><span>全景故宫</span></a></li><li><a href="http://www.dpm.org.cn/vr/tour.html"><span>VR</span><span>V故宫</span></a></li><li><a href="passport/login.html"><span>登</span><span>会员登录</span></a></li>    </ul>
+    <a class="close" href="javascript:;"></a>
+</div>

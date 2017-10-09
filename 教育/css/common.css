@@ -1,0 +1,85 @@
+html, body, h1, h2, h3, h4, h5, h6, div, ol, ul, li, dl, dt, dd, table, caption, tr, th, td, span, p, a, b, u, i, em, img, iframe, fieldset, form, label, legend, input, button, select, textarea {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font: 14px/1.5 "Microsoft YaHei", Arial, Tahoma, Helvetica, sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased !important;
+    max-width: 1920px;
+    margin: 0 auto;
+    color: #707070;
+    /*font-family: Î¢ÈíÑÅºÚ,'Heiti SC',ºÚÌå,Arial;*/
+    position: relative;
+}
+
+input, button, textarea, select {
+    font: 14px/100% "Microsoft YaHei", Arial, Tahoma, Helvetica, sans-serif;
+    outline: 0;
+    border: 0;
+    background: none;
+    color: #707070;
+}
+
+input:focus, textarea:focus {
+    color: #474747;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    color: #474747;
+    line-height: 1.2;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: inherit;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+textarea {
+    overflow: auto;
+    resize: none;
+}
+
+table {
+    border-collapse: collapse;
+    border: 0;
+}
+
+caption, th {
+    font-weight: normal;
+}
+
+img {
+    border: 0;
+    outline: 0;
+    vertical-align: middle;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+i, em, b, strong {
+    font-style: normal;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:focus {
+    outline: 0;
+}
+

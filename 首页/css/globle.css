@@ -1,0 +1,559 @@
+/*css 初始化 start */
+
+html, body, h1, h2, h3, h4, h5, h6, div, ol, ul, li, dl, dt, dd, table, caption, tr, th, td, span, p, a, b, u, i, em, img, iframe, fieldset, form, label, legend, input, button, select, textarea {
+    margin: 0;
+    padding: 0;
+}
+
+/*各浏览器显示不同，去掉边框等默认样式*/
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: 微软雅黑, "Heiti SC", 黑体, Arial;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+/*防止拖动 影响布局*/
+textarea {
+    resize: none;
+}
+
+/*去掉行内替换元素空白缝隙*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+body {
+    font: 14px/1.5 "Microsoft YaHei", Arial, Tahoma, Helvetica, sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased !important;
+    max-width: 1920px;
+    margin: 0 auto;
+    color: #707070;
+    font-family: 微软雅黑, 'Heiti SC', 黑体, Arial;
+    position: relative;
+}
+
+/*清除浮动*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+.wrap {
+    width: 1572px;
+    margin: 0 auto;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #A5835A;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+/*废物利用*/
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.al {
+    text-align: left;
+}
+
+.ac {
+    text-align: center;
+}
+
+.ar {
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}
+
+/*css 初始化 end */
+
+/*导航栏  start*/
+img {
+    border: 0;
+    outline: 0;
+    vertical-align: middle;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.header {
+    background: rgba(109, 110, 110, 0.7);
+    height: 48px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 15;
+}
+
+.header .logo {
+    width: 115px;
+    height: 60px;
+    overflow: hidden;
+    position: absolute;
+    left: 40px;
+    top: 4px;
+}
+
+.header .nav {
+    text-align: center;
+    width: 100%;
+    line-height: 48px;
+}
+.header .nav ul {
+    display: inline-block;
+    margin-left: -30px;
+}
+
+.header .nav li {
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+
+.header .nav .navCenter a {
+    display: block;
+    color: #FFF;
+    margin-right: 70px;
+    font: 400 18px/48px "Microsoft YaHei";
+}
+
+.header .nav li b {
+    display: block;
+    visibility: hidden;
+    width: 36px;
+    height: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -55px;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.nav_child {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    opacity: 0.8;
+}
+
+.header .nav_child .child {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    text-align: left;
+    line-height: 50px;
+    background: url(../images/black60.png);
+    display: none;
+}
+
+.nav_child .child strong {
+    color: #fff;
+    background: url(../images/img6.png) right center no-repeat;
+    padding-right: 33px;
+    margin-right: 8px;
+}
+
+.nav_child .child p:last-child strong {
+    margin: 0;
+    background: none;
+    padding: 0;
+}
+
+.nav_child .child p {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.nav_child .child p a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.tools {
+    position: absolute;
+    top: 16px;
+    right: 40px;
+    text-align: center;
+}
+
+.tools ul {
+    float: left;
+    clear: both;
+}
+
+.tools ul li {
+    float: left;
+    padding-top: 13px;
+}
+
+.header .tools li img {
+    max-height: none;
+    width: 17px;
+}
+
+.header .tools li {
+    float: left;
+    padding-left: 20px;
+    margin-left: 20px;
+    border-left: 1px solid #fff;
+    height: 4px;
+    position: relative;
+    cursor: pointer;
+}
+
+.header .tools .lang {
+    width: 41px;
+}
+
+.header .tools li:first-child {
+    border-left: none;
+}
+
+.header .tools li a {
+    position: relative;
+    top: -15px;
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    height: 20px;
+    overflow: hidden;
+    padding-right: 22px;
+}
+
+.header .tools li a:after {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    border-top: 5px solid #fff;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    width: 0;
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.header .tools li .scBtn {
+    width: 40px;
+    height: 20px;
+}
+
+.tools .menutool {
+    display: block;
+    float: left;
+    margin-left: 28px;
+    width: 34px;
+    height: 34px;
+    overflow: hidden;
+    position: relative;
+    top: -10px;
+    cursor: pointer;;
+}
+.tools .menutool img {
+    width: 34px;
+    max-height: none;
+}
+.header .loginbox {
+    display: none;
+    background: url(../images/login-box.png) no-repeat 0 bottom;
+    width: 80px;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    padding-top: 35px;
+    left: -2px;
+}
+
+.header .loginbox .a {
+    cursor: pointer;
+    display: block;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    color: #fff;
+    padding: 0;
+}
+.header .loginbox .a:hover{
+    color: #765632;
+}
+.header .language {
+    display: none;
+    background: url(../images/login-box.png) no-repeat 0 bottom;
+    width: 80px;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    padding-top: 35px;
+    left: -2px;
+}
+
+.header .language .a {
+    cursor: pointer;
+    display: block;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    color: #fff;
+    padding: 0;
+}
+.header .language .a:hover{
+    color: #765632;
+}
+.header .search {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    background: url(../images/search.png) center bottom no-repeat;
+    width: 280px;
+    height: 40px;
+    padding-top: 40px;
+    display: none;
+}
+
+.header .search .kw {
+    background: none;
+    border: none;
+    width: 220px;
+    line-height: 40px;
+    height: 40px;
+    padding: 0 10px;
+    color: #fff;
+    float: left;
+}
+
+.header .search .ok {
+    background: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    float: left;
+    cursor: pointer;
+}
+.header a:hover {
+    color: #765632;
+}
+.navbar {
+    min-width: 1660px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+.navbar .layer {
+    padding-top: 156px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    background: url(../images/nav_bg.jpg) center top repeat;
+}
+.header .nav a:hover{
+    color: #765632;
+}
+.popWindow .close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index: 1;
+    overflow: hidden;
+    background: url(../images/navbar_close.png) no-repeat;
+    width: 50px;
+    height: 50px;
+    transition: all .2s;
+}
+.popWindow .close:hover{
+    transform: rotate(180deg);
+}
+.navbar .list {
+    overflow: hidden;
+    display: inline-block;
+}
+.navbar .item {
+    float: left;
+    min-width: 160px;
+    color: #fff;
+    text-align: center;
+}
+.navbar .item h1 {
+    font-size: 26px;
+    padding-bottom: 26px;
+    background: url(../images/nav_liststyle.png) center bottom no-repeat;
+    margin-bottom: 12px;
+    color: inherit;
+}
+.navbar .item dl {
+    background: url(../images/nav_dot.png) center top no-repeat;
+    padding-top: 18px;
+    margin-bottom: 14px;
+}
+.navbar .item dd {
+    font-size: 16px;
+    padding: 4px 0;
+}
+.navbar .item a {
+    color: #eaa1a1;
+}
+/* 导航部分  end*/
+
+/*底部部分 start*/
+.footer {
+    padding-bottom: 27px;
+    background: #272727;
+    font-size: 12px;
+    color: #fff;
+    line-height: 1;
+    margin: 0 auto;
+}
+
+.footer .wrap {
+    width: 1258px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 50px;
+}
+
+.footer .share {
+    text-align: center;
+    font-size: 0;
+    padding: 30px 0 20px;
+    position: absolute;
+    right: 74px;
+    top: 18px;
+    z-index: 1;
+}
+
+.footer a img {
+    display: inline-block;;
+    vertical-align: middle;
+    width: 20px;
+    border: 0;
+}
+
+.footer .share a {
+    background: #404040;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 9px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.footer .nav_foot {
+    color: #fff;
+    text-align: center;
+}
+
+.footer .nav_foot a {
+    color: #fff;
+}
+
+.footer .copyright {
+    color: #fff;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.footer .copyright a {
+    color: #fff;
+}
+
+.footer .btns {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.footer .btns a {
+    display: inline-block;
+    height: 28px;
+    line-height: 26px;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    color: #fff;
+}
+
+.footer .propasal {
+    text-align: center;
+    font-size: 16px;
+    padding: 15px 0;
+    background: #474747;
+    border-top: 1px solid #474747;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: -60px;
+    z-index: 9999;
+}
+
+/*底部部分 end*/
+
+
+
+
